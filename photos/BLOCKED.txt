@@ -1,0 +1,16 @@
+Wikipedia-Porträts für Kronenduell konnten nicht geladen werden.
+
+Datum: 2026-10-16
+Fehler (curl):
+  https://en.wikipedia.org/api/rest_v1/page/summary/Shakira
+    -> curl: (56) CONNECT tunnel failed, response 403
+  https://upload.wikimedia.org/...
+    -> curl: (56) CONNECT tunnel failed, response 403
+
+Ursache: Die Netzwerk-Policy der Cloud-Umgebung blockiert en.wikipedia.org,
+upload.wikimedia.org (und commons.wikimedia.org).
+
+Lösung: In den Umgebungseinstellungen (Network access) diese Domains unter
+"Allowed domains" freigeben oder eine breitere Zugriffsstufe wählen, dann
+die Aufgabe erneut ausführen.
+Doku: https://code.claude.com/docs/en/cloud-environments#network-access
