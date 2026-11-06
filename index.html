@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>BB Smash it Burger &amp; More – Smash-Burger in Monheim am Rhein</title>
+  <meta name="description" content="BB Smash it Burger &amp; More: Smash-Burger, Brioche French Toast, Wraps &amp; Snacks in der Böttgerstraße 1, 40789 Monheim am Rhein. Abholung &amp; Lieferung – jetzt online bestellen.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="BB Smash it Burger &amp; More – Monheim am Rhein">
+  <meta property="og:description" content="Smash-Burger, Schicht für Schicht. Böttgerstraße 1, 40789 Monheim am Rhein.">
+  <meta property="og:image" content="assets/img/burger-jalapeno.webp">
+  <meta property="og:locale" content="de_DE">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="preload" href="assets/fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "BB Smash it Burger & More",
+    "servesCuisine": ["Burger", "Smash-Burger"],
+    "url": "https://www.bb-smashit.de/",
+    "telephone": "+49 15563 206781",
+    "image": "assets/img/laden-front.webp",
+    "menu": "https://www.bb-smashit.de/speisekarte/bbsmashitburgermore",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Böttgerstraße 1",
+      "postalCode": "40789",
+      "addressLocality": "Monheim am Rhein",
+      "addressCountry": "DE"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday",   "opens": "17:00", "closes": "21:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "11:00", "closes": "14:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "17:00", "closes": "21:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday",  "opens": "17:00", "closes": "21:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday",    "opens": "16:00", "closes": "23:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday",  "opens": "16:00", "closes": "23:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday",    "opens": "15:00", "closes": "22:00" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/bb.smash.it.burger/",
+      "https://www.tiktok.com/@derbebe1",
+      "https://www.facebook.com/people/BB-Smash-it-Burger-More/61572190876083/"
+    ]
+  }
+  </script>
+</head>
+<body class="is-loading">
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <!-- ============ FILM-VORLAUF (Countdown) ============ -->
+  <div class="leader" id="leader" aria-hidden="true">
+    <div class="leader__frame">
+      <div class="leader__cross"></div>
+      <div class="leader__ring leader__ring--outer"></div>
+      <div class="leader__ring leader__ring--inner"></div>
+      <div class="leader__sweep"></div>
+      <span class="leader__num" id="leaderNum">3</span>
+    </div>
+    <p class="leader__hint">Klicken zum Überspringen</p>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- ============ KAMERA-HUD ============ -->
+  <div class="hud" aria-hidden="true">
+    <span class="hud__rec"><i></i>REC</span>
+    <span class="hud__tc" id="timecode">00:00:00:00</span>
+    <span class="hud__scene" id="hudScene">SZENE 00</span>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <div class="promo" role="note">
+    <span>Online bestellen &amp; <strong>10,00&nbsp;€ Rabatt</strong> sichern – Promo-Code <strong class="promo__code">SMASH</strong></span>
+  </div>
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top" aria-label="BB Smash it Burger &amp; More – zum Anfang">
+      <img src="assets/img/logo.webp" alt="BB Smash it Burger &amp; More" width="600" height="600">
+    </a>
+    <nav class="nav__links" aria-label="Hauptnavigation">
+      <a href="#film">Der Film</a>
+      <a href="#bestseller">Bestseller</a>
+      <a href="#speisekarte">Speisekarte</a>
+      <a href="#story">Über uns</a>
+      <a href="#standort">Standort</a>
+    </nav>
+    <a class="btn btn--yellow nav__cta" href="https://www.bb-smashit.de/speisekarte/bbsmashitburgermore" rel="noopener">Bestellen</a>
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Menü öffnen">
+      <span class="nav__toggle-bun"></span><span class="nav__toggle-patty"></span><span class="nav__toggle-bun nav__toggle-bun--b"></span>
+    </button>
+  </header>
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <nav aria-label="Mobile Navigation">
+      <a href="#film">Der Film</a>
+      <a href="#bestseller">Bestseller</a>
+      <a href="#speisekarte">Speisekarte</a>
+      <a href="#story">Über uns</a>
+      <a href="#standort">Standort</a>
+    </nav>
+    <a class="btn btn--yellow btn--lg" href="https://www.bb-smashit.de/speisekarte/bbsmashitburgermore" rel="noopener">Jetzt bestellen</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ OPENER ============ -->
+    <section class="hero" id="top" aria-label="Willkommen">
+      <div class="hero__bg">
+        <img src="assets/img/grillplatte.webp" alt="" width="825" height="1100" fetchpriority="high">
+      </div>
+      <canvas class="hero__embers" id="embers" aria-hidden="true"></canvas>
+      <div class="hero__shock" aria-hidden="true"></div>
+      <div class="bars" aria-hidden="true"><i class="bars__top"></i><i class="bars__bottom"></i></div>
+
+      <div class="hero__inner">
+        <p class="hero__kicker"><span>BB Smash it</span> präsentiert</p>
+        <h1 class="hero__title">
+          <span class="sr-only">BB Smash it – Burger &amp; More in Monheim am Rhein</span>
+          <span class="hero__line hero__line--1" aria-hidden="true"><span class="ch">S</span><span class="ch">M</span><span class="ch">A</span><span class="ch">S</span><span class="ch">H</span></span>
+          <span class="hero__line hero__line--2" aria-hidden="true"><span class="ch">I</span><span class="ch">T</span><span class="ch ch--dot">.</span></span>
+        </h1>
+        <p class="hero__tag">Burger &amp; More <i></i> Monheim am Rhein</p>
+        <div class="hero__cta">
+          <a class="btn btn--yellow btn--lg" href="https://www.bb-smashit.de/speisekarte/bbsmashitburgermore" rel="noopener">Jetzt online bestellen</a>
+          <a class="btn btn--ghost btn--lg" href="#film"><span class="play" aria-hidden="true"></span>Film ab</a>
+        </div>
+      </div>
+
+      <p class="hero__billing">Ein Film über Smashed Beef, doppelt Cheddar &amp; goldbraune Brioche <i></i> Abholung &amp; Lieferung <i></i> Böttgerstraße&nbsp;1</p>
+      <a class="scroll-cue" href="#film" aria-label="Weiter zum Burger-Film">
+        <span>Scrollen &amp; Burger bauen</span><i></i>
+      </a>
+    </section>
+
+    <!-- ============ DER FILM: BURGER SCHICHT FÜR SCHICHT ============ -->
+    <section class="film" id="film" aria-labelledby="filmTitle">
+      <div class="film__stage">
+        <div class="film__glow" aria-hidden="true"></div>
+        <div class="film__beam" aria-hidden="true"></div>
+
+        <h2 class="film__bigtitle" id="filmTitle" aria-label="Der Bebe Spezial – Schicht für Schicht">
+          <span aria-hidden="true">Bebe</span><span aria-hidden="true">Spezial</span>
+        </h2>
+
+        <div class="film__intro" aria-hidden="true">
+          <p class="eyebrow">Kapitel 01</p>
+          <p class="film__intro-title">Schicht<br>für Schicht.</p>
+          <p class="film__intro-text">Scroll weiter – jede Zutat landet einzeln.</p>
+        </div>
+
+        <div class="burger-wrap" id="burgerWrap">
+          <svg class="steam" viewBox="0 0 200 160" aria-hidden="true">
+            <path d="M60 150 C40 120 80 100 60 70 C42 44 74 26 62 4"/>
+            <path d="M100 150 C80 118 122 98 100 66 C82 40 116 22 102 0"/>
+            <path d="M140 150 C120 120 160 100 140 70 C122 44 154 26 142 4"/>
+          </svg>
+          <div class="burger" id="burger" role="img" aria-label="Illustration des Bebe Spezial Burgers: Brioche Bun, Haussauce, Smashed Beef Patty, doppelt Cheddar, Gurken, Jalapeños, rote Zwiebeln, Tomate, Salat und Brioche Top Bun"></div>
+          <div class="burger__shadow" aria-hidden="true"></div>
+        </div>
+
+        <div class="film__flash" aria-hidden="true"></div>
+
+        <div class="film__captions" id="captions" aria-hidden="true"></div>
+
+        <div class="film__credits">
+          <p class="film__credits-head">Besetzung</p>
+          <ol id="credits"></ol>
+        </div>
+
+        <div class="film__final" id="final">
+          <p class="eyebrow">Das Ergebnis</p>
+          <h3 class="film__final-title">Bebe Spezial Burger</h3>
+          <p class="film__final-text">Smashed-Beef-Patty auf Haussauce, doppelt Cheddar, Gurken, Jalapeños, rote Zwiebeln, Tomaten und Salat im goldbraunen Brioche Bun.</p>
+          <div class="film__final-prices">
+            <span class="price">9,99&nbsp;€</span>
+            <span class="film__final-menu">als Menü mit Pommes &amp; Getränk <strong>16,99&nbsp;€</strong></span>
+          </div>
+          <a class="btn btn--yellow btn--lg" href="https://www.bb-smashit.de/speisekarte/bbsmashitburgermore" rel="noopener">Jetzt bestellen</a>
+        </div>
+
+        <div class="film__progress" aria-hidden="true"><i id="filmProgress"></i></div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__band marquee__band--yellow">
+        <div class="marquee__track">
+          <span>BB ✶ SMASH ✶ IT ✶ BURGER ✶ </span><span>BB ✶ SMASH ✶ IT ✶ BURGER ✶ </span><span>BB ✶ SMASH ✶ IT ✶ BURGER ✶ </span><span>BB ✶ SMASH ✶ IT ✶ BURGER ✶ </span>
+        </div>
+      </div>
+      <div class="marquee__band marquee__band--black">
+        <div class="marquee__track marquee__track--reverse">
+          <span>ABHOLUNG ✶ LIEFERUNG ✶ MONHEIM AM RHEIN ✶ </span><span>ABHOLUNG ✶ LIEFERUNG ✶ MONHEIM AM RHEIN ✶ </span><span>ABHOLUNG ✶ LIEFERUNG ✶ MONHEIM AM RHEIN ✶ </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ BESTSELLER ============ -->
+    <section class="section bestseller" id="bestseller" aria-labelledby="bestTitle">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">Publikumslieblinge</p>
+        <h2 class="section__title" id="bestTitle">Die Top&nbsp;3 <span>Am beliebtesten im Online-Shop</span></h2>
+      </header>
+      <div class="posters">
+        <article class="poster" data-reveal>
+          <span class="poster__rank">1</span>
+          <p class="poster__genre">Burger-Menü</p>
+          <h3 class="poster__title">Classic Cheeseburger Menü</h3>
+          <p class="poster__text">Smashed-Beef-Patty auf hausgemachter Sauce, Cheddar, Gurken und rote Zwiebeln im Brioche Bun – dazu Pommes frites und ein Getränk (0,33&nbsp;l).</p>
+          <p class="poster__cast">In den Hauptrollen: Smashed Beef · Cheddar · Pommes</p>
+          <div class="poster__foot">
+            <span class="price">15,49&nbsp;€</span>
+            <a class="btn btn--yellow btn--sm" href="https://www.bb-smashit.de/speisekarte/bbsmashitburgermore" rel="noopener">Bestellen</a>
+          </div>
+        </article>
+        <article class="poster poster--yellow" data-reveal>
+          <span class="poster__rank">2</span>
+          <p class="poster__genre">Burger</p>
+          <h3 class="poster__title">Classic Cheeseburger</h3>
+          <p class="poster__text">Smashed-Beef-Patty auf hausgemachter Sauce, Cheddar, Gurken und rote Zwiebeln in einem goldbraunen Brioche Bun.</p>
+          <p class="poster__cast">In den Hauptrollen: Smashed Beef · Cheddar · Gurken</p>
+          <div class="poster__foot">
+            <span class="price">9,99&nbsp;€</span>
+            <a class="btn btn--black btn--sm" href="https://www.bb-smashit.de/speisekarte/bbsmashitburgermore" rel="noopener">Bestellen</a>
+          </div>
+        </article>
+        <article class="poster" data-reveal>
+          <span class="poster__rank">3</span>
+          <p class="poster__genre">Burger-Menü</p>
+          <h3 class="poster__title">Oklahoma Burger Menü</h3>
+          <p class="poster__text">Smashed Beef Patty mit sanft angeschmorten Zwiebeln, Gurke, Cheddar und Oklahomasauce im Brioche Bun – dazu Pommes frites und ein Getränk (0,33&nbsp;l).</p>
+          <p class="poster__cast">In den Hauptrollen: Smashed Beef · Schmorzwiebeln · Cheddar</p>
+          <div class="poster__foot">
+            <span class="price">14,99&nbsp;€</span>
+            <a class="btn btn--yellow btn--sm" href="https://www.bb-smashit.de/speisekarte/bbsmashitburgermore" rel="noopener">Bestellen</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SPEISEKARTE ============ -->
+    <section class="section menu" id="speisekarte" aria-labelledby="menuTitle">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">Das komplette Programm</p>
+        <h2 class="section__title" id="menuTitle">Speisekarte <span>Burger, French Toast, Wraps &amp; mehr</span></h2>
+      </header>
+      <div class="menu__tabs" id="menuTabs" role="tablist" aria-label="Kategorien der Speisekarte"></div>
+      <div class="menu__grid" id="menuGrid" role="tabpanel" aria-live="polite"></div>
+      <p class="menu__note">Reguläre Preise laut Online-Speisekarte, Stand 06.11.2026. Aktuelle Rabatte und Aktionen siehst du direkt im <a href="https://www.bb-smashit.de/speisekarte/bbsmashitburgermore" rel="noopener">Bestellshop</a>. Fragen zu Zutaten oder Allergenen? Ruf uns an: <a href="tel:+4915563206781">+49&nbsp;15563&nbsp;206781</a>.</p>
+    </section>
+
+    <!-- ============ ÜBER UNS / FILMSTREIFEN ============ -->
+    <section class="story" id="story" aria-labelledby="storyTitle">
+      <div class="story__pin">
+        <div class="story__intro" data-reveal>
+          <p class="eyebrow">Hinter den Kulissen</p>
+          <h2 class="section__title" id="storyTitle">Gegründet in Monheim am Rhein.</h2>
+          <p>BB Smash it Burger &amp; More wurde mit der Leidenschaft für köstliche Burger in Monheim am Rhein gegründet. Inhaberin Sarah Bonouh hat es sich zur Aufgabe gemacht, die besten Smash-Burger der Region anzubieten.</p>
+          <p>Bei uns kommen hochwertige Zutaten auf die Platte – mit viel Liebe zum Detail zubereitet. Du isst vor Ort, holst ab oder lässt liefern.</p>
+        </div>
+        <div class="strip">
+          <div class="strip__track" id="stripTrack">
+            <figure class="frame"><img src="assets/img/grillplatte.webp" alt="Patties mit Cheddar und Bacon auf der Grillplatte" width="825" height="1100" loading="lazy"><figcaption><b>01</b> Auf der Platte</figcaption></figure>
+            <figure class="frame frame--wide"><img src="assets/img/kueche-grill.webp" alt="Ein Mitarbeiter bereitet Burger in der Küche zu" width="1400" height="988" loading="lazy"><figcaption><b>02</b> In der Küche</figcaption></figure>
+            <figure class="frame"><img src="assets/img/double-smash-hand.webp" alt="Burger mit zwei Patties und Cheddar in der Hand" width="630" height="1020" loading="lazy"><figcaption><b>03</b> Doppelt gesmasht</figcaption></figure>
+            <figure class="frame frame--wide"><img src="assets/img/burger-jalapeno.webp" alt="Burger mit Cheddar und Jalapeños im Brioche Bun" width="1200" height="900" loading="lazy"><figcaption><b>04</b> Mit Jalapeños</figcaption></figure>
+            <figure class="frame"><img src="assets/img/bacon-burger.webp" alt="Hoher Burger mit Bacon, Salat und Röstzwiebeln" width="619" height="1100" loading="lazy"><figcaption><b>05</b> Bacon &amp; Röstzwiebeln</figcaption></figure>
+            <figure class="frame frame--wide"><img src="assets/img/tablett-pommes.webp" alt="Burger mit Pommes auf einem Tablett" width="1200" height="900" loading="lazy"><figcaption><b>06</b> Burger &amp; Pommes</figcaption></figure>
+            <figure class="frame"><img src="assets/img/burger-boxen.webp" alt="Burger in Boxen zum Mitnehmen mit Onion Rings" width="765" height="1020" loading="lazy"><figcaption><b>07</b> Zum Mitnehmen</figcaption></figure>
+            <figure class="frame"><img src="assets/img/snack-teller.webp" alt="Teller mit Nachos und Snacks" width="765" height="1020" loading="lazy"><figcaption><b>08</b> Snacks</figcaption></figure>
+            <figure class="frame"><img src="assets/img/wrap.webp" alt="Offener Wrap mit Hähnchen, Gemüse und Sauce" width="765" height="1020" loading="lazy"><figcaption><b>09</b> Wraps</figcaption></figure>
+            <figure class="frame"><img src="assets/img/lieferauto.webp" alt="Rotes Lieferauto mit BB Smash it Burger Logo" width="825" height="1100" loading="lazy"><figcaption><b>10</b> Auch per Lieferung</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STIMMEN ============ -->
+    <section class="section reviews" id="stimmen" aria-labelledby="reviewTitle">
+      <header class="section__head" data-reveal>
+        <p class="eyebrow">Die Kritiken</p>
+        <h2 class="section__title" id="reviewTitle">Was unsere Gäste sagen</h2>
+      </header>
+      <div class="quotes">
+        <blockquote class="quote quote--hero" data-reveal>
+          <p>„Das ist der leckerste Burger, den ich je in meinem Leben gegessen habe!“</p>
+          <footer>Mohammed A.</footer>
+        </blockquote>
+        <blockquote class="quote" data-reveal>
+          <p>„Die Patties sind perfekt gesmasht, außen knusprig, innen saftig – genau so muss ein Smashburger schmecken.“</p>
+          <footer>M. D.</footer>
+        </blockquote>
+        <blockquote class="quote" data-reveal>
+          <p>„Ich habe schon überall auf der Welt Burger probiert – von Foodtrucks bis zur gehobenen Gastronomie – und dieser hier war zweifellos einer der besten, die ich je gegessen habe.“</p>
+          <footer>Yasar Y.</footer>
+        </blockquote>
+        <blockquote class="quote" data-reveal>
+          <p>„Ich habe den Double Bacon Burger und die Chicken Wings probiert. Sie waren frisch und lecker. Empfehlenswert.“</p>
+          <footer>Bilal A.</footer>
+        </blockquote>
+        <blockquote class="quote" data-reveal>
+          <p>„Einfach der Wahnsinn! Ich war schon öfter mit meinem Freund hier und jedes Mal ist es ein absoluter Genuss!“</p>
+          <footer>Mine B.</footer>
+        </blockquote>
+      </div>
+      <div class="reviews__cta" data-reveal>
+        <a class="btn btn--ghost" href="https://search.google.com/local/writereview?placeid=ChIJh0CwtjAzv0cRQ8vgkryXhkI" rel="noopener" target="_blank">Bewerte uns auf Google</a>
+      </div>
+    </section>
+
+    <!-- ============ STANDORT ============ -->
+    <section class="section visit" id="standort" aria-labelledby="visitTitle">
+      <div class="visit__media" data-reveal>
+        <img src="assets/img/laden-front.webp" alt="Außenansicht von BB Smash it Burger &amp; More mit gelbem Logo an der Fassade" width="1200" height="900" loading="lazy">
+        <span class="visit__stamp">Drehort</span>
+      </div>
+      <div class="visit__info" data-reveal>
+        <p class="eyebrow">Jetzt in Monheim am Rhein</p>
+        <h2 class="section__title" id="visitTitle">Komm vorbei.</h2>
+        <p class="status" id="openStatus" aria-live="polite"><i></i><span>Öffnungszeiten</span></p>
+        <address class="visit__address">
+          <strong>BB Smash it Burger &amp; More</strong><br>
+          Böttgerstraße 1<br>
+          40789 Monheim am Rhein<br>
+          <a href="tel:+4915563206781">+49&nbsp;15563&nbsp;206781</a>
+        </address>
+        <table class="hours" aria-label="Öffnungszeiten">
+          <tbody>
+            <tr data-day="1"><th scope="row">Montag</th><td>Ruhetag</td></tr>
+            <tr data-day="2"><th scope="row">Dienstag</th><td>17:00 – 21:30</td></tr>
+            <tr data-day="3"><th scope="row">Mittwoch</th><td>11:00 – 14:00 · 17:00 – 21:30</td></tr>
+            <tr data-day="4"><th scope="row">Donnerstag</th><td>17:00 – 21:30</td></tr>
+            <tr data-day="5"><th scope="row">Freitag</th><td>16:00 – 23:00</td></tr>
+            <tr data-day="6"><th scope="row">Samstag</th><td>16:00 – 23:00</td></tr>
+            <tr data-day="0"><th scope="row">Sonntag</th><td>15:00 – 22:00</td></tr>
+          </tbody>
+        </table>
+        <div class="visit__cta">
+          <a class="btn btn--yellow" href="https://www.bb-smashit.de/speisekarte/bbsmashitburgermore" rel="noopener">Online bestellen</a>
+          <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=B%C3%B6ttgerstra%C3%9Fe+1%2C+40789+Monheim+am+Rhein" rel="noopener" target="_blank">Route planen</a>
+          <a class="btn btn--ghost" href="tel:+4915563206781">Anrufen</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ ABSPANN ============ -->
+  <footer class="footer">
+    <div class="footer__end">
+      <p class="footer__the">The</p>
+      <p class="footer__endword">End<span>.</span></p>
+      <p class="footer__question">Hunger bekommen?</p>
+      <a class="btn btn--yellow btn--lg" href="https://www.bb-smashit.de/speisekarte/bbsmashitburgermore" rel="noopener">Jetzt bestellen</a>
+    </div>
+
+    <div class="credits-roll" aria-label="Abspann">
+      <dl>
+        <div><dt>Hauptrolle</dt><dd>Smashed Beef Patty</dd></div>
+        <div><dt>Nebenrollen</dt><dd>Cheddar (doppelt), Gurken, Jalapeños, rote Zwiebeln, Tomate, Salat</dd></div>
+        <div><dt>Kostüm</dt><dd>Goldbraune Brioche</dd></div>
+        <div><dt>Drehort</dt><dd>Böttgerstraße 1, Monheim am Rhein</dd></div>
+        <div><dt>Kamera</dt><dd>Du – beim Scrollen</dd></div>
+      </dl>
+    </div>
+
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo.webp" alt="BB Smash it Burger &amp; More" width="600" height="600" loading="lazy">
+      </div>
+      <div>
+        <p class="footer__h">Adresse</p>
+        <p>Böttgerstraße 1<br>40789 Monheim am Rhein</p>
+      </div>
+      <div>
+        <p class="footer__h">Kontakt</p>
+        <p><a href="tel:+4915563206781">+49&nbsp;15563&nbsp;206781</a></p>
+      </div>
+      <div>
+        <p class="footer__h">Folge uns</p>
+        <p class="footer__social">
+          <a href="https://www.instagram.com/bb.smash.it.burger/" rel="noopener" target="_blank">Instagram</a>
+          <a href="https://www.tiktok.com/@derbebe1" rel="noopener" target="_blank">TikTok</a>
+          <a href="https://www.facebook.com/people/BB-Smash-it-Burger-More/61572190876083/" rel="noopener" target="_blank">Facebook</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <span>© <span id="year">2026</span> BB Smash it Burger &amp; More</span>
+      <nav aria-label="Rechtliches">
+        <a href="https://www.bb-smashit.de/impressum" rel="noopener">Impressum</a>
+        <a href="https://www.bb-smashit.de/datenschutzerklaerung" rel="noopener">Datenschutz</a>
+        <a href="https://www.bb-smashit.de/gutscheine" rel="noopener">Gutscheine</a>
+      </nav>
+    </div>
+  </footer>
+
+  <noscript><style>.leader{display:none}</style></noscript>
+
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+  <script src="assets/vendor/lenis.min.js" defer></script>
+  <script src="assets/js/menu-data.js" defer></script>
+  <script src="assets/js/burger.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
